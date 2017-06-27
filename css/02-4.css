@@ -1,0 +1,271 @@
+.nav-inner,
+.header-inner,
+section,
+footer {
+	width: 950px;
+	margin: 0 auto;
+}
+
+.nav-inner {
+	width: 980px;
+}
+
+.nav-top,
+.nav-img,
+.footer nav a,
+.footer span,
+.time,
+.rate,
+.left-middle,
+.right-middle,
+.left-middle-top a,
+.left-middle-middle li,
+.right-middle-mid .em time,
+.right-middle-mid em time {
+	float: left;
+}
+
+.header a,
+.login,
+.right-middle-mid .em mark,
+.right-middle-mid em mark {
+	float: right;
+}
+
+.wrap {
+	background: #f3f5f5 url(../img/commen-img/bg.png) no-repeat;
+	background-size: 100%;
+}
+
+.header {
+	width: 904px;
+	padding: 50px 30px 15px 16px;
+}
+
+.header strong {
+	display: block;
+	font-size: 24px;
+	margin: 36px 180px 4px 0;
+	color: #fff;
+}
+
+.header a {
+	font-size: 14px;
+	color: #8ba9bb;
+}
+
+.middle {
+	width: 922px;
+	padding: 0 2px 77px 27px;
+	border: 1px solid #b6b6b6;
+	background-color: #fff;
+}
+
+.left-middle {
+	width: 632px;
+	padding-top: 38px;
+	margin-right: 26px;
+}
+
+.left-middle-top dt,
+.left-middle-middle h4 {
+	width: 618px;
+	padding: 8px 0px 9px 10px;
+	border: 1px solid #b6b6b6;
+	background-color: #f7f7f7;
+}
+
+.left-middle dd {
+	font-size: 14px;
+	margin: 8px 0 31px 2px;
+	line-height: 25px;
+}
+
+.terrace-state {
+	width: 640px;
+	margin-right: -47px;
+}
+
+.time,
+.rate {
+	width: 272px;
+	margin-right: 47px;
+}
+
+.time span,
+.rate span {
+	display: block;
+	text-align: center;
+	font-size: 12px;
+	margin-bottom: 9px;
+	margin-left: 7px;
+}
+
+.left-middle-top a {
+	font-size: 16px;
+	padding: 13px 32px 15px;
+	margin: 7px 1px 0 9px;
+	color: #3C7CB3;
+	border: 1px solid #e2ebf1;
+	border-left: 0;
+	border-bottom: 0;
+	background-color: #f3fafe;
+}
+
+.left-middle-middle {
+	width: 660px;
+}
+
+.left-middle-middle li {
+	width: 310px;
+	padding-right: 10px;
+}
+
+.left-middle-middle h4 {
+	width: 298px;
+	margin-bottom: 18px;
+}
+
+.left-middle-middle p {
+	width: 298px;
+	font-size: 12px;
+	line-height: 20px;
+	padding-left: 11px;
+}
+
+.left-middle-middle strong {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.left-middle-middle em {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.left-middle-middle .email {
+	margin-top: 5px;
+}
+
+.left-middle-middle a {
+	color: #617ccb;
+}
+
+.left-middle-middle .knowledge {
+	margin-bottom: 32px;
+}
+
+.left-middle-middle span {
+	padding-left: 18px;
+	background: url(../img/img02-4/icon1.png) no-repeat 0 3px;
+}
+
+.right-middle {
+	width: 220px;
+	padding: 35px 20px 0;
+	background-color: #f7f7f7;
+}
+
+.right-middle h4 {
+	font: 15px "微软雅黑";
+	font-weight: 300;
+	color: #333;
+	padding-bottom: 8px;
+	margin-bottom: 15px;
+	border-bottom: 1px dotted #bababa;
+}
+
+.right-middle h5 {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #bababa;
+}
+
+.right-middle h5 img {
+	width: 50px;
+	height: 50px;
+	padding-top: 15px;
+	padding-left: 15px;
+	margin-right: 5px;
+}
+
+.right-middle h5 span {
+	display: inline-block;
+	width: 102px;
+	font-size: 14px;
+}
+
+.right-middle h5 a {
+	font-size: 14px;
+	color: #0082cb;
+}
+
+.right-middle .microblog {
+	display: block;
+	padding: 13px 18px 15px 0;
+	background: url(../img/img02-4/icon2.png) no-repeat right;
+}
+
+.right-middle .add {
+	display: inline-block;
+	width: 100px;
+	padding-bottom: 10px;
+	text-indent: 300px;
+	white-space: nowrap;
+	overflow: hidden;
+	background: url(../img/img02-4/add.png) no-repeat 1px;
+}
+
+.right-middle-mid {
+	width: 195px;
+	padding: 12px 15px 0;
+	height: 428px;
+	overflow: auto;
+	font: 12px/20px Arial, Helvetica, sans-serif;
+	color: #666;
+	background-color: #fff;
+}
+
+.right-middle-mid .item {
+	padding-bottom: 5px;
+	border-bottom: 1px dotted #bababa;
+}
+
+.right-middle-mid .item1 {
+	border-bottom: 0;
+}
+
+.right-middle-mid .item:hover {
+	background-color: #f7f7f7;
+}
+
+.right-middle-mid a {
+	color: #0082cb;
+}
+
+.right-middle-mid em {
+	display: block;
+}
+
+.right-middle-mid .triangle {
+	display: block !important;
+	height: 15px;
+	overflow: hidden;
+	font-family: SimSun !important;
+	font-size: 26px !important;
+	line-height: 1.231;
+}
+
+.right-middle-mid .reply {
+	position: relative;
+	margin: 10px 0 5px 0;
+	padding: 15px 10px 10px 10px;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 3px;
+	background-color: #fff;
+}
+
+.right-middle-mid .reply-user-name {
+	padding-right: 30px;
+	background: url(../img/img02-4/icon2.png) no-repeat right;
+}

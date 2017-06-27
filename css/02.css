@@ -1,0 +1,257 @@
+
+.nav-inner,
+.header-inner,
+section,
+footer {
+	width: 980px;
+	margin: 0 auto;
+}
+
+
+.nav-top,
+.nav-img,
+.header-inner a,
+.box1 h3 img,
+.box1 h3 span,
+.box5 h3 img,
+.box5 h3 span,
+.section-ul li,
+.section-ul li a,
+.app li,
+.footer nav a,
+.footer span {
+	float: left;
+}
+.login,
+.box1 h3 .more, 
+.section-ul li time {
+	float: right;
+}
+
+.title a {
+	display: inline-block;
+	margin:0 2px;
+}
+.title .titleInner div {
+	width: 94px;
+	margin:0 auto ;
+	position: absolute;
+	top: 360px;
+	left: 440px;
+}
+
+.title {
+	height:400px;
+	background: url(../img/img2/7197.jpg) no-repeat;
+	background-size: cover;
+}
+
+.title .titleInner {
+	width: 980px;
+	margin: 0 auto;
+	position: relative;
+}
+.header {
+	height: 182px;
+	padding-top: 18px;
+	background: url(../img/img2/bg_route_display.png) no-repeat;
+	background-size: cover;
+}
+
+.header-inner {
+	width: 980px;
+	margin: 0 auto;
+	height: 165px;
+}
+.header-inner a {
+	padding-right:8px ;
+}
+.header-inner img {
+	border: 1px solid #ccc;
+}
+.header-inner a:hover img {
+	box-shadow: 0px 0px 15px #3C3B4B;
+}
+/*section部分开始*/
+#section {
+	font-size: 14px;
+	padding-top: 20px;
+}
+.section-inner {
+	width: 882px;
+	padding: 48px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+}
+.section-inner .box1 {
+	padding-bottom: 26px;
+	background: url(../img/commen-img/line.png) no-repeat center bottom;
+}
+.section-inner h3 {
+	height: 30px;
+}
+ .box1 h3 a {
+ 	display: inline-block;
+	color: #3c7cb3;
+ }
+ .box1 h3 span,
+ .box5 h3 span {
+ 	font-size: 22px;
+ 	line-height: 30px;
+ }
+ .box1 h3 img,
+ .box5 h3 img {
+ 	width: 34px;
+ 	height: 30px;
+ 	padding-right:6px;
+ }
+.more {
+	color: #3c7cb3;
+	font-size: 14px;
+	line-height: 30px;
+}
+.section-ul {
+	width: 882px;
+	height: 64px;
+ 	line-height: 30px;
+ 	padding-top: 4px;
+ }
+.section-ul li {
+	width: 353px;
+	padding:0 78px 0 10px;
+	background: url(../img/img2/point.png) no-repeat 1px 15px;
+}
+.section-ul li a {
+	font-size: 14px;
+	color: #333;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.section-ul li time {
+	font-size: 12px;
+	line-height: 30px;
+}
+.box2 {
+	padding: 65px 0 88px;
+	background: url(../img/img2/SDK.png) no-repeat -39px bottom;
+	
+}
+.box2 h3,
+.box3 h3,
+.box4 h3 {
+	font: bold 32px"微软雅黑";
+	
+}
+.box2 p,
+.box3 p,
+.box4 p {
+	width: 352px;
+	font: 16px/30px "微软雅黑";
+	padding: 8px 0 12px;
+}
+.box3 p {
+	width: 360px;
+}
+.box3 {
+	padding:25px 0 49px 480px;
+	background: url(../img/img2/section2.png) no-repeat 2px bottom;
+}
+.box4 {
+	padding: 63px 0 49px 0;
+	background: url(../img/img2/section3.png) no-repeat 0 bottom;
+}
+.box4 p {
+	padding-top: 12px;
+}
+.box5 {
+	padding-top: 28px;
+}
+.box5 .app {
+	width: 852px;
+	padding-left: 45px;
+	overflow: hidden;
+}
+.box5 li {
+	width: 80px;
+	padding: 18px 62px 0 0;
+}
+
+.app img {
+	width: 80px;
+	height: 80px;
+	border-radius: 18px;
+	border: 1px solid #ccc;
+}
+.box5 a span {
+	display: inline-block;
+	width: 80px;
+	font-size: 14px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.hover2,
+.hover3,
+.hover4,
+.hover5,
+.hover6,
+.app2 .singer,
+.app3 .singer,
+.app4 .singer,
+.app5 .singer,
+.app6 .singer {
+	opacity: 0;
+}
+.box5 .singer {
+	display: block;
+	margin-left: 30px;
+	height: 20px;
+	width: 20px;
+	border: 1px solid #c0c0c0;
+	background-color: #ccc;
+	transform: rotate(45deg);
+}
+
+.hover1,
+.hover2,
+.hover3,
+.hover4,
+.hover5,
+.hover6 {
+	display: block;
+	width: 744px;
+	line-height: 22px;
+	background-color: #ccc;
+	padding: 20px 27px 20px 20px;
+	border: 1px solid #c0c0c0;
+	margin-top: -12px;
+	border-radius:10px;
+	position: relative;
+	z-index: 2;
+}
+.box5 li:hover .hover1,
+.box5 li:hover .hover2,
+.box5 li:hover .hover3,
+.box5 li:hover .hover4,
+.box5 li:hover .hover5,
+.box5 li:hover .hover6,
+.app2:hover .singer,
+.app3:hover .singer,
+.app4:hover .singer,
+.app5:hover .singer,
+.app6:hover .singer {
+	opacity: 1;
+}
+
+footer {
+	margin: 20px auto 0;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.footer {
+	border-top-color: #f9fafa;
+	border-top: 1px solid #e4e4e4;
+}
