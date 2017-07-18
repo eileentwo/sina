@@ -28,29 +28,45 @@ footer {
 	float: right;
 }
 
-.title a {
-	display: inline-block;
-	margin:0 2px;
-}
-.title .titleInner div {
-	width: 94px;
-	margin:0 auto ;
-	position: absolute;
-	top: 360px;
-	left: 440px;
-}
-
-.title {
+.title,
+.title .titleInner{
+	width: 100%;
 	height:400px;
-	background: url(../img/img2/7197.jpg) no-repeat;
-	background-size: cover;
-}
-
-.title .titleInner {
-	width: 980px;
 	margin: 0 auto;
 	position: relative;
+	top: 0px;
+	left: 0;
 }
+.title ul {
+	width: 120px;
+	margin:0 auto ;
+	position: absolute;
+	margin-left: -60px;
+	left: 50%;
+	bottom: 20px;
+}
+.title li {
+	display: inline-block;
+	width: 16px;
+	height:16px;
+	background-color: #0082CB;
+	border-radius: 50%;
+	margin:0 2px;
+	cursor: pointer;
+}
+
+.title .img {
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 100%;
+	height: 400px;
+}
+.title img {
+	width: 100%;
+	height: 350px;
+}
+
 .header {
 	height: 182px;
 	padding-top: 18px;
@@ -64,9 +80,13 @@ footer {
 	height: 165px;
 }
 .header-inner a {
+	width: 25%;
 	padding-right:8px ;
+	box-sizing: border-box;
 }
 .header-inner img {
+	width: 100%;
+	height: auto;
 	border: 1px solid #ccc;
 }
 .header-inner a:hover img {
@@ -168,17 +188,21 @@ footer {
 .box5 {
 	padding-top: 28px;
 }
-.box5 .app {
+.box5 .apps {
 	width: 852px;
 	padding-left: 45px;
-	overflow: hidden;
 }
 .box5 li {
 	width: 80px;
 	padding: 18px 62px 0 0;
+	float: left;
 }
 
-.app img {
+.apps a{
+	display: block;
+	position: relative;
+}
+.apps img {
 	width: 80px;
 	height: 80px;
 	border-radius: 18px;
@@ -192,56 +216,46 @@ footer {
 	text-align: center;
 }
 
-.hover2,
-.hover3,
-.hover4,
-.hover5,
-.hover6,
-.app2 .singer,
-.app3 .singer,
-.app4 .singer,
-.app5 .singer,
-.app6 .singer {
-	opacity: 0;
+.box5 em {
+	position: absolute;
+	top: 20px;
+	left: 30px;
+	z-index: 999;
+    width: 0;
+    height: 0;
+    border:10px solid transparent;
+    border-bottom-color: #e0e0e0;
+    opacity: 0;
 }
-.box5 .singer {
-	display: block;
-	margin-left: 30px;
-	height: 20px;
-	width: 20px;
-	border: 1px solid #c0c0c0;
-	background-color: #ccc;
-	transform: rotate(45deg);
+.box5 strong {
+    width: 0;
+    height: 0;
+    border:8px solid transparent;
+    border-bottom-color: #f3f5f5;
+    overflow: hidden;
+    position: absolute;
+    top: -6px;
+    left: -8px;
+    z-index: 999;
 }
 
-.hover1,
-.hover2,
-.hover3,
-.hover4,
-.hover5,
-.hover6 {
-	display: block;
+.introduce p{
+	display: none;
 	width: 744px;
 	line-height: 22px;
-	background-color: #ccc;
+	background-color:#f3f5f5;
 	padding: 20px 27px 20px 20px;
-	border: 1px solid #c0c0c0;
+	border: 1px solid #e0e0e0;
 	margin-top: -12px;
 	border-radius:10px;
 	position: relative;
+	left:40px;
+	top:27px;
 	z-index: 2;
 }
-.box5 li:hover .hover1,
-.box5 li:hover .hover2,
-.box5 li:hover .hover3,
-.box5 li:hover .hover4,
-.box5 li:hover .hover5,
-.box5 li:hover .hover6,
-.app2:hover .singer,
-.app3:hover .singer,
-.app4:hover .singer,
-.app5:hover .singer,
-.app6:hover .singer {
+
+.box5 .opci {
+	display: block;
 	opacity: 1;
 }
 

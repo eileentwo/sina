@@ -6,25 +6,43 @@
 		<link rel="stylesheet" type="text/css" href="css/cssReset.css"/>
 		<link rel="stylesheet" type="text/css" href="css/commen.css"/>
 		<link rel="stylesheet" type="text/css" href="css/02.css"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=0.67,maximum-scale=2,user-scalable=no" />
 		
-		<script src="html5shiv.min.js"></script>
+		<script src="js/html5shiv.min.js"></script>
+		<script src="js/index.js"></script>
+		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 	</head>
 	<body>
 		<div class="wrap">
 			<header class="nav-wrap">
 				<div class="nav-inner">
 					<div class="nav-img">
-						<a href="#">
+						<a href="02.html">
 							<img src="img/commen-img/weibo-logo.png"/>
 						</a>
 					</div>
-					<nav class="nav-top">
+					<nav class="nav-top" id="Tnav">
 						<a class="icon1" href="02.html">微连接</a>
 						<a class="icon1" href="02-1.html">微服务</a>
+						<ul class="nav-hide">
+							<li><a href="#">移动应用</a></li>
+							<li><a href="#">网站接入</a></li>
+							<li><a href="#">无线游戏</a></li>
+							<li><a href="#">其他</a></li>
+						</ul>
+						<ul class="nav-hide">
+							<li><a href="#">轻应用</a></li>
+							<li><a href="#">微博支付</a></li>
+							<li><a href="#">商业数据</a></li>
+							<li><a href="#">数据中心</a></li>
+							<li><a href="#">粉丝服务</a></li>
+							<li><a href="#">合作介绍</a></li>
+						</ul>
 						<a href="02-2.html">文档</a>
 						<a href="02-3.html">支持</a>
 						<a href="02-4.html">推广</a>
 						<a href="02-5.html">我的应用</a>
+						
 					</nav>
 					<div class="login">
 						<a href="#">登录</a>
@@ -32,24 +50,13 @@
 				</div>
 			</header>
 			<div class="title">
-				<div class="titleInner">
-					<div>
-						<a href="#">
-							<img src="img/img2/dotted.png"/>
-						</a>
-						<a href="#">
-							<img src="img/img2/dotted2.png"/>
-						</a>
-						<a href="#">
-							<img src="img/img2/dotted2.png"/>
-						</a>
-						<a href="#">
-							<img src="img/img2/dotted2.png"/>
-						</a>
-						<a href="#">
-							<img src="img/img2/dotted2.png"/>
+				<div class="titleInner" id="autoplay">
+					<div class="img">
+						<a href="02-1.html">
+							<img src="img/img2/7197.jpg"/>
 						</a>
 					</div>
+					<ul></ul>
 				</div>
 			</div>
 			<div class="header">
@@ -79,12 +86,12 @@
 							</h3>
 							<ul class="section-ul ClearFix">
 								<li>
-									<a href="#">【产品动态】应用安全IP功能上线通知</a>
-									<time>(2015-10-30)</time>
-								</li>
-								<li>
 									<a href="#">【平台公告】新版微博数据中心上线公告</a>
 									<time>(2015-10-28)</time>
+								</li>
+								<li>
+									<a href="#">【产品动态】应用安全IP功能上线通知</a>
+									<time>(2015-10-30)</time>
 								</li>
 								<li>
 									<a href="#">【举报窗口】情色、涉政类应用举报窗口</a>
@@ -129,87 +136,120 @@
 			                	</a>
 			                </div>
 						</div>
-						<div class="box5">
+						<div class="box5" id="box5">
 							<h3 class="ClearFix">
 								<img src="img/img2/icon2.png"/>
 								<span>优秀开发者</span>
 							</h3>
-							<ul class="app">
-								<li class="app1">
+							<ul class="apps ClearFix">
+								<li>
 									<a href="#">
 			                			<img src="img/commen-img/weico.jpg"/>
 									</a>
 									<a href="#">
 										<span>Weico</span>
-										<span class="singer"></span>
+										<em class="opci">
+											<strong></strong>
+										</em>
 									</a>
-									<span class="hover1">
-										Weico是由国内知名用户体验设计公司 eico design 独立开发运营的产品品牌，旗下 Pinco 品酷、Weico微博客户端、微可拍、WeicoGIF、WeicoNote 等高品质明星产品，拥有千万智能移动平台用户。为客户提供从品牌设计、概念设计、用户体验、交互设计、图形界面视觉设计到最终的产品化设计。
-						            </span>
 								</li>
-								<li class="app2">
+								<li>
 									<a href="#">
 			                			<img src="img/commen-img/youku.png"/>
 									</a>
 									<a href="#">
 										<span>优酷</span>
-										<span class="singer"></span>
+										<em>
+											<strong></strong>
+										</em>
 									</a>
-									<span class="hover2">
-										优酷视频集多元化内容平台与优势技术资源于一身，优质版权视频资源涵盖高清电视剧、电影、综艺、动漫、音乐、热点资讯等，横扫全网海量视频。携手订阅、收藏，全新温情上线，轻量简约，打造视频最快搜索，最快发现，最快播放的全方位立体娱乐体验，同时支持在线与离线播放，随心点播，播放体验更为便捷流畅。感受酣畅淋漓的高清视频播放之旅！
-						            </span>
 								</li>
-								<li class="app3">
+								<li>
 									<a href="#">
 			                			<img src="img/commen-img/gaode.png"/>	
 									</a>
 									<a href="#">
 										<span>高德地图</span>
-										<span class="singer"></span>
+										<em>
+											<strong></strong>
+										</em>
 									</a>
-									<span class="hover3">
-						                	国内最专业的手机地图，超过3.2亿用户在使用！高德地图是应用商店上数据准确率最高、最省流量、躲避拥堵功能最强大的手机地图，平均每天为用户省油61万升！
-						            </span>
 								</li>
-								<li class="app4">
+								<li>
 									<a href="#">
 										<img src="img/commen-img/kongming.jpg"/>
 									</a>
 									<a href="#">
 										<span>孔明科技</span>
-										<span class="singer"></span>
+										<em>
+											<strong></strong>
+										</em>
 									</a>
-									<span class="hover4">
-						           		孔明是一家社会化媒体数据营销公司，用数据解读社会化消费者，以数据驱动营销，让品牌为更多消费者所聚焦。服务零售、体育、奢侈品等传统行业，拥有超过50万注册用户，以及100多家商业服务客户。
-				                    </span>
 								</li>
-								<li class="app5">
+								<li>
 									<a href="#">
 										<img src="img/commen-img/weimai.jpg"/>
 									</a>
 									<a href="#">
 										<span>微卖</span>
-										<span class="singer"></span>
+										<em>
+											<strong></strong>
+										</em>
 									</a>
-									<span class="hover5">
-			                        		微卖是以社交网络为传播媒介的商品售卖平台。任何人都可以方便的使用微卖平台，利用社交信息共享的优势，安全有效的售卖各种商品。目前接入逾8000户商家，累计发布近万商品，日均成交额460000。
-			                        </span>
 								</li>
-								<li class="app6">
+								<li>
 									<a href="#">
 										<img src="img/commen-img/weizhong.jpg"/>
 									</a>
 									<a href="#">
 										<span>微众</span>
-										<span class="singer"></span>
+										<em>
+											<strong></strong>
+										</em>
 									</a>
-									<span class="hover3">
-			                            	微众传媒是北京软件和信息服务业协会执行会长单位、国家高新技术企业，专注于社会化营销管理平台及服务，开创性提出“金字塔营销模型”和“微众价值定律”等社会化精准营销理念。独家为小米定制微博运营系统，创造了新媒体营销商业奇迹。2014年《中国好声音》独家粉丝营销合作伙伴。目前服务客户超200家。
-			                        </span>
 								</li>
 							</ul> 
+							<div class="introduce">
+								<p class="opci">
+									Weico是由国内知名用户体验设计公司 eico design 独立开发运营的产品品牌，旗下 Pinco 品酷、Weico微博客户端、微可拍、WeicoGIF、WeicoNote 等高品质明星产品，拥有千万智能移动平台用户。为客户提供从品牌设计、概念设计、用户体验、交互设计、图形界面视觉设计到最终的产品化设计。
+					            </p>
+								<p>
+									优酷视频集多元化内容平台与优势技术资源于一身，优质版权视频资源涵盖高清电视剧、电影、综艺、动漫、音乐、热点资讯等，横扫全网海量视频。携手订阅、收藏，全新温情上线，轻量简约，打造视频最快搜索，最快发现，最快播放的全方位立体娱乐体验，同时支持在线与离线播放，随心点播，播放体验更为便捷流畅。感受酣畅淋漓的高清视频播放之旅！
+					            </p>
+					            <p>
+					                	国内最专业的手机地图，超过3.2亿用户在使用！高德地图是应用商店上数据准确率最高、最省流量、躲避拥堵功能最强大的手机地图，平均每天为用户省油61万升！
+					            </p>
+								<p>
+					           		孔明是一家社会化媒体数据营销公司，用数据解读社会化消费者，以数据驱动营销，让品牌为更多消费者所聚焦。服务零售、体育、奢侈品等传统行业，拥有超过50万注册用户，以及100多家商业服务客户。
+			                    </p>
+								<p>
+		                        	微卖是以社交网络为传播媒介的商品售卖平台。任何人都可以方便的使用微卖平台，利用社交信息共享的优势，安全有效的售卖各种商品。目前接入逾8000户商家，累计发布近万商品，日均成交额460000。
+		                        </p>
+								<p>
+		                       		微众传媒是北京软件和信息服务业协会执行会长单位、国家高新技术企业，专注于社会化营销管理平台及服务，开创性提出“金字塔营销模型”和“微众价值定律”等社会化精准营销理念。独家为小米定制微博运营系统，创造了新媒体营销商业奇迹。2014年《中国好声音》独家粉丝营销合作伙伴。目前服务客户超200家。
+		                     	 </p>
+							</div>
+						<!---------------------------------------------------->
+							<!--<p class="introduce opci">
+								Weico是由国内知名用户体验设计公司 eico design 独立开发运营的产品品牌，旗下 Pinco 品酷、Weico微博客户端、微可拍、WeicoGIF、WeicoNote 等高品质明星产品，拥有千万智能移动平台用户。为客户提供从品牌设计、概念设计、用户体验、交互设计、图形界面视觉设计到最终的产品化设计。
+				            </p>
+							<p class="introduce" >
+								优酷视频集多元化内容平台与优势技术资源于一身，优质版权视频资源涵盖高清电视剧、电影、综艺、动漫、音乐、热点资讯等，横扫全网海量视频。携手订阅、收藏，全新温情上线，轻量简约，打造视频最快搜索，最快发现，最快播放的全方位立体娱乐体验，同时支持在线与离线播放，随心点播，播放体验更为便捷流畅。感受酣畅淋漓的高清视频播放之旅！
+				            </p>
+				            <p class="introduce" >
+				                	国内最专业的手机地图，超过3.2亿用户在使用！高德地图是应用商店上数据准确率最高、最省流量、躲避拥堵功能最强大的手机地图，平均每天为用户省油61万升！
+				            </p>
+							<p class="introduce" >
+				           		孔明是一家社会化媒体数据营销公司，用数据解读社会化消费者，以数据驱动营销，让品牌为更多消费者所聚焦。服务零售、体育、奢侈品等传统行业，拥有超过50万注册用户，以及100多家商业服务客户。
+		                    </p>
+							<p class="introduce" >
+	                        	微卖是以社交网络为传播媒介的商品售卖平台。任何人都可以方便的使用微卖平台，利用社交信息共享的优势，安全有效的售卖各种商品。目前接入逾8000户商家，累计发布近万商品，日均成交额460000。
+	                        </p>
+							<p class="introduce" >
+	                       		微众传媒是北京软件和信息服务业协会执行会长单位、国家高新技术企业，专注于社会化营销管理平台及服务，开创性提出“金字塔营销模型”和“微众价值定律”等社会化精准营销理念。独家为小米定制微博运营系统，创造了新媒体营销商业奇迹。2014年《中国好声音》独家粉丝营销合作伙伴。目前服务客户超200家。
+	                     	 </p>-->
 						</div>
-						</div>
+					</div>
 				</div>
 			</section>
 			<footer>
@@ -238,3 +278,4 @@
 		</div>
 	</body>
 </html>
+

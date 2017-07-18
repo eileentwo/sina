@@ -1,4 +1,4 @@
-html {
+/*html {
 	height: 100%;
 	overflow: hidden;
 }
@@ -7,27 +7,30 @@ body {
 	height: 100%;
 	overflow: auto;
 	position: relative;
-}
+}*/
 
 .wrap {
 	font:16px/1 "微软雅黑";
 	background-color: #f3f5f5;
 }
+
 a:hover {
 	text-decoration: underline;
-}
-.nav-inner {
-	height: 48px;
 }
 .nav-wrap {
 	width: 100%;
 	height: 55px;
-	position: absolute;
-	top:0;
+	position: fixed;
+	top: 0;
 	left: 0;
-	z-index: inherit;
+	z-index: 99;
 	background: url(../img/commen-img/NAV.png) repeat-x;
 }
+.nav-inner {
+	height: 48px;
+	position: relative;
+}
+
 .nav-img {
 	font-size: 0;
 	width: 232px;
@@ -41,14 +44,38 @@ a:hover {
 .nav-top {
 	line-height: 48px;
 }
-.nav-top a {
+
+.nav-inner a {
 	display: inline-block;
-	padding: 0 16px;
+	padding: 0 18px;
 	color: #333;
 }
-.nav-top a:hover {
-	background-color: #ddd;
+
+.nav-hide a {
+	padding: 0 10px;
 }
+.nav-inner a:hover,
+.nav-hide li:hover {
+	background-color: #ddd;
+	text-decoration: none;
+}
+
+.nav-hide {
+	position: absolute;
+	top: 48px;
+	left: 237px;
+	background-color: #ebebeb;
+	line-height: 24px;
+	padding: 8px 0 6px;
+	text-align: center;
+	z-index: 66;
+	display: none;
+}
+
+.nav-hide:nth-of-type(2){
+	left: 326px;
+}
+
 
  .icon1 {
 	background: url(../img/commen-img/S-icon.png) no-repeat 68px 24px;
