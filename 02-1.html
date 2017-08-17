@@ -9,6 +9,9 @@
 		<link rel="stylesheet" type="text/css" href="css/02-1.css"/>
 		
 		<script src="js/html5shiv.min.js"></script>
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/021index.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
 	<body>
@@ -20,13 +23,13 @@
 							<img src="img/img2-1/weibo-logo.png" />
 						</a>
 					</div>
-					<nav class="nav-top">
-						<a class="icon1" href="02.html">微连接</a>
-						<a class="icon1" href="02-1.html">微服务</a>
-						<a href="02-2.html">文档</a>
-						<a href="02-3.html">支持</a>
-						<a href="02-4.html">推广</a>
-						<a href="02-5.html">我的应用</a>
+					<nav class="nav-top" id="Tnav">
+						<a class="icon1 nav_bc" href="02-1.html">微连接</a>
+						<a class="icon1" href="02-2.html">微服务</a>
+						<a href="02-3.html">文档</a>
+						<a href="02-4.html">支持</a>
+						<a href="02-5.html">推广</a>
+						<a href="#">我的应用</a>
 					</nav>
 					<div class="login">
 						<a href="#">登录</a>
@@ -187,36 +190,56 @@
 	                        </p>
 						</div>
 					</div>
-					<div class="item5">
+					<div class="item5" id="item5">
 						<h4>成功案例</h4> 
 						<div class="inner ClearFix">
-							<div class="app">
-                                <div class="app_list">
+							<ul class="app">
+                                <li class="app_list">
                                     <a class="app_link" href="#" >
                                     	<img src="img/img2-1/finance.png">
                                     	<p class="app_name">财经网</p>
-                                    	<mark></mark>
-                                    	<span class="finance" >
-	                                    	<em>财经网与微博深层合作，在用户登录、用户分享、以及新闻正文页面都与微博做了功能结合。微博提供统计工具，用户点击榜单的内容跳转到财经网自己新闻正文页中，增加二次点击和用户粘性。</em>
-	                                    	<img src="img/img2-1/finance-h.png" />
-	                                    </span>
 	                                </a>
-                                </div>
-                                <div class="app_list">
+                                </li>
+                                <li class="app_list">
                                     <a class="app_link" href="#">
                                     	<img src="img/img2-1/fast.png">
                                     	<p class="app_name">快手</p>
                                     </a>
-                                </div>
-                                <div class="app_list">
+                                </li>
+                                <li class="app_list">
                                     <a class="app_link" href="#">
                                     	<img src="img/img2-1/simida.png">
 										<p class="app_name">思密达的快乐家族</p>
                                     </a>
-                                </div>
-							</div>
-							
-							<div class="app-view"></div>
+                                </li>
+							</ul>
+							<ul class="app-view">
+								<li>
+									<mark></mark>
+	                            	<span class="finance" >
+	                                	<em>财经网与微博深层合作，在用户登录、用户分享、以及新闻正文页面都与微博做了功能结合。微博提供统计工具，用户点击榜单的内容跳转到财经网自己新闻正文页中，增加二次点击和用户粘性。</em>
+	                                	<img src="img/img2-1/finance-h.png" />
+	                                </span>
+								</li>
+								<li>
+                                    <mark></mark>
+                                	<span class="finance" >
+                                    	<em>在快手的客户端中，用户通过微博登录后，发布内容可以生成一条微博，同步到微博。</em>
+                                    	<img src="img/img2-1/fast-1.png" />
+                                    	<img src="img/img2-1/fast-2.png" />
+                                    	<img src="img/img2-1/fast-3.png" />
+                                    </span>
+								</li>
+								<li>
+                                	<mark></mark>
+                                	<span class="finance" >
+                                    	<em>完成用户授权，即可方便使用微博账号开始游戏。引入优质好友资源，低成本实现游戏社交化。</em>
+                                    	<img src="img/img2-1/simi-1.png" />
+                                    	<img src="img/img2-1/simi-2.png" />
+                                    	<img src="img/img2-1/simi-3.png" />
+                                    </span>
+								</li>
+							</ul>
 						
 						</div>
 					</div>

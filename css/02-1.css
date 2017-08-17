@@ -42,7 +42,7 @@ footer {
 	width: 211px;
 	height: 64px;
 	text-indent: -99999px;
-	background: url(../img/weibo.png) no-repeat;
+	background: url(../img/img2-1/weibo.png) no-repeat;
 }
 
 .middle {
@@ -274,6 +274,10 @@ footer {
 	padding: 40px;
 	position: relative;
 }
+.app {
+	width: 80px;
+	float: left;
+}
 .app_list {
 	margin-top: 26px;
 }
@@ -303,30 +307,53 @@ footer {
 	box-shadow: 0 0 5px #999;
 }
 
-.app_list span {
-	width: 730px;
-	padding: 15px;
-	border-radius: 5px/10px;
-	box-shadow: 0 0 5px #999;
+.app-view {
+	position: relative;
+	margin-top: 26px;
+	margin-left: 18px;
+	float: left;
+	width: 770px;
+	border: 1px solid #e0e0e0;
 	background-color: #f3f5f5;
-	position: absolute;
-	left: 145px;
-	top: 85px;
+	border-radius: 5px;
+	min-height: 360px;
 }
 
-.app_list span em {
+.app-view li {
+	display: none;
+	float: left;
+	padding: 15px 0 15px 15px;
+}
+
+.app-view  span em {
 	font-size: 14px;
 	color: #333;
 	line-height: 22px;
 }
 
-.app_list  mark {
+.app-view mark {
 	display: inline-block;
 	width: 0px;
 	height: 0;
 	border: 10px solid #333;
 	border-color: transparent  #c0c0c0 transparent   transparent ;
 	position: absolute;
-	left: 124px;
-	top: 125px;
+	left: -20px;
+	top: 38px;
+}
+.app-view  li:nth-of-type(2) mark{
+	top:168px ;
+}
+.app-view  li:nth-of-type(3) mark{
+	top:298px ;
+}  
+
+.app-view li:nth-of-type(1) span img {
+	width: 730px;
+}
+
+.app-view li:nth-of-type(2) span img,
+.app-view li:nth-of-type(3) span img  {
+	width: 235px;
+	margin-right: 12px;
 }

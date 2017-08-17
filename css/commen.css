@@ -54,7 +54,8 @@ a:hover {
 .nav-hide a {
 	padding: 0 10px;
 }
-.nav-inner a:hover,
+
+.nav-inner .nav_bc,
 .nav-hide li:hover {
 	background-color: #ddd;
 	text-decoration: none;
@@ -123,7 +124,7 @@ footer {
 .footer p {
 	color: #999;
 	width: 460px;
-	margin: 0 auto;
+	margin: 0 auto 30px;
 }
 .footer p span {
 	margin: 0 10px;

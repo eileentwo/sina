@@ -297,16 +297,19 @@ footer {
 	line-height: 30px;
 	word-spacing: normal;
 }
-.item4 ul {
+.item4>ul {
 	padding: 30px 0 150px;
 }
 
-.item4 li {
+.item4 .app {
 	width: 80px;
 	margin:0 20px 0 41px;
 	text-align: center;
+	position: relative;
+	top: 0;
+	left: 0;
 }
-.item4 li img {
+.item4  img {
 	width: 80px;
 	height: 80px;
 	border: 1px solid #ccc;
@@ -314,9 +317,56 @@ footer {
 	margin-bottom: 10px;
 }
 
-.item4 li span {
+.item4 span {
 	font-size: 15px;
 	font-weight: bold;
 	color: #333;
+	text-shadow: 0 1px 1px rgba(230,230,230,.75);
+}
+
+.app>p {
+	display: none;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-color:transparent transparent #f2f2f5  transparent;
+	position: absolute;
+	top: 106px;
+	left: 30px;
+}
+
+.item4 .detail {
+	display: none;
+	font-size: 12px;
+	color: #999;
+	text-align: left;
+	position: absolute;
+	top: 125px;
+}
+.item4 .detail_inner {
+	background-color: #f2f2f5;
+	min-width: 500px;
+	white-space:nowrap;
+	padding: 20px 0  20px 20px;
+}
+
+.detail_inner table {
+	margin-top: 15px;
+}
+.detail_inner td {
+	padding: 0 20px;
+	min-width: 89px;
+	height: 43px;
+	color: #333;
+	border-left: 1px solid #ccc;
+}
+.detail_inner td:nth-of-type(1){
+	border-left: 0px;
+	padding-left: 0;
+}
+.detail_inner td p {
+	margin-top: 10px;
+	color: #eb7350;
+	font-size: 18px;
 	text-shadow: 0 1px 1px rgba(230,230,230,.75);
 }

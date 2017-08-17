@@ -35,7 +35,7 @@ window.onload = function(){
 	}
 	//导航部分结束
 	//轮播图部分开始
-	var autoplay = document.getElementById('autoplay');
+	/*var autoplay = document.getElementById('autoplay');
 	var oDimg = autoplay.getElementsByTagName('div')[0];
 	var oDul = autoplay.getElementsByTagName('ul')[0];
 	var aDLi = oDul.getElementsByTagName('li');
@@ -76,15 +76,47 @@ window.onload = function(){
 			num++;
 			num%= arrUrl.length;
 			fnTab();
-		},1500)
+		},2000)
 	}
-	setTimeout(autoPlay,1500)
+	setTimeout(autoPlay,2000)
 	oDimg.onmouseover = function(){
 		clearInterval( autoplay.timer );
 	}
 	aDLi.onmouseover =oDimg.onmouseover;
 	oDimg.onmouseout = autoPlay;
-	
+	*/
+	$(function(){
+    //第一张显示
+    $(".pic li").eq(0).show();
+    
+    $("#point li").mouseover(function() {
+        $(this).addClass('cur').siblings().removeClass("cur");
+        var index = $(this).index();
+        i = index;//不加这句有个bug，鼠标移出小圆点后，自动轮播不是小圆点的后一个
+        $(".pic li").eq(index).fadeIn(500).siblings().fadeOut(500);
+    });
+    
+    var i=0;
+    var timer=setInterval(play,2000);
+    
+    
+    function play(){
+        i++;
+        i = i > $(".pic li").length-1 ? 0 : i ;
+        
+        $("#point li").eq(i).addClass('cur').siblings().removeClass("cur");
+        $(".pic li").eq(i).fadeIn(500).siblings().fadeOut(500);
+    }
+    
+   
+    
+    $("#autoplay").hover(function() {
+        clearInterval(timer);
+    }, function() {
+        timer=setInterval(play,2000);
+    });
+    
+})
 	//轮播图部分结束
 	//box5部分开始
 		var oBox5 = document.getElementById('box5');
